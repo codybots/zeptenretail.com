@@ -34,7 +34,8 @@
     z-index: 100;
     background: rgba(250,250,248,0.93);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #2176C7 0%, #E63329 25%, #F5A623 50%, #3DAF4A 75%, #2176C7 100%) 1;
     padding: 0 40px;
     height: 68px;
     display: flex;
@@ -154,7 +155,8 @@
   }
 
   footer {
-    border-top: 1px solid var(--border);
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #2176C7 0%, #E63329 25%, #F5A623 50%, #3DAF4A 75%, #2176C7 100%) 1;
     padding: 20px 40px;
     display: flex;
     align-items: center;
