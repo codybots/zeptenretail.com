@@ -15,6 +15,9 @@
     --muted: #888883;
     --border: #E8E8E4;
     --accent: #1B4FD8;
+    --accent-light: #EEF4FB;
+    --surface: #F8F9FF;
+    --blue: #2176C7;
   }
 
   body {
@@ -50,13 +53,20 @@
   }
 
   .nav-link {
-    font-size: 13px;
-    color: var(--muted);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #C7DCF0;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: background 0.2s, color 0.2s;
   }
 
-  .nav-link:hover { color: var(--text); }
+  .nav-link:hover { background: #C7DCF0; }
 
   .hero {
     flex: 1;
@@ -155,12 +165,11 @@
   }
 
   footer {
+    background: var(--surface);
     border-top: 3px solid transparent;
     border-image: linear-gradient(90deg, #2176C7 0%, #E63329 25%, #F5A623 50%, #3DAF4A 75%, #2176C7 100%) 1;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    padding: 24px;
     font-size: 12px;
     color: var(--muted);
   }
@@ -168,14 +177,13 @@
   footer a {
     color: var(--muted);
     text-decoration: none;
-    transition: color 0.2s;
   }
 
-  footer a:hover { color: var(--text); }
+  footer a:hover { color: var(--blue); }
 
   @media (max-width: 600px) {
     nav { padding: 0 20px; }
-    footer { padding: 20px; flex-direction: column; gap: 8px; text-align: center; }
+    footer { padding: 20px; }
     .marketplace-strip { gap: 8px; }
     .mp-item { width: 100px; }
     .mp-item img { max-width: 90px; }
@@ -232,8 +240,7 @@
 </section>
 
 <footer>
-  <span>&copy; 2025 Zepten Retail</span>
-  <a href="/privacy">Privacy Policy</a>
+  &copy; 2025 Zepten Retail. All rights reserved. &nbsp;·&nbsp; <a href="/privacy">Privacy Policy</a>
 </footer>
 
 </body>
